@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 1189px;
+}
+
+.text {
+    font-family: 'Taipei Sans TC Beta', sans-serif;
+    font-size: 36px;
+}
+
+.title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+    color: #000;
+}
+
+.speaker_name {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-style: italic;
+}
+
+.career {
+    position: absolute;
+    top: 800px;
+    left: 85%;
+    color: white;
+}
+
+.topic {
+    position: absolute;
+    top: 100%;
+    font-size: 18px;
+    width: 100%;
+    top: 900px;
+    left: 5px;
+}
