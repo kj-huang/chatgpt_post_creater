@@ -7,6 +7,7 @@ function App() {
   const [career, setCareer] = useState('');
   const [topic, setTopic] = useState('');
   const imageRef = useRef(null);
+  const [date, setDate] = useState('');
 
   const handleExportImage = () => {
     const element = imageRef.current;
@@ -53,6 +54,8 @@ function App() {
         <h2>Input Text</h2>
         <p>標題內容</p>
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+        <p>日期</p>
+        <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
         <p>講者名稱</p>
         <input type="text" value={speakerName} onChange={(e) => setSpeakerName(e.target.value)} />
         <p>講者職銜</p>
@@ -66,6 +69,7 @@ function App() {
         <h2>Preview</h2>
         <div className="image-container" ref={imageRef}>
           <img src={process.env.PUBLIC_URL + '/background.png'} />
+          <div className="text date">{date}</div>
           <div className="text title" style={{ fontFamily: "'Taipei Sans TC Beta', sans-serif", fontSize: "40px", fontWeight: "bold", color: "#000"  }}>{text}</div>
           <div className="text speaker_name">{speakerName}</div>
           <div className="text career">{career}</div>

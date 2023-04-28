@@ -37,6 +37,16 @@
     color: #000;
 }
 
+.date {
+    font-family: 'Taipei Sans TC Beta', sans-serif;
+    position: absolute;
+    color: #000;
+    top: 410px;
+    left: 58%;
+    font-weight: bold;
+    font-size: 48px;
+}
+
 .speaker_name {
     position: absolute;
     top: 780px;
