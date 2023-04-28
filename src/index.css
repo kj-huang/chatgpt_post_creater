@@ -39,25 +39,26 @@
 
 .speaker_name {
     position: absolute;
-    top: 800px;
-    left: 50%;
+    top: 780px;
+    left: 49%;
     font-family: 'Arial', sans-serif;
-    font-size: 36px;
+    font-size: 48px;
     color: white;
     font-style: italic;
+    font-weight: 800;
 }
 
 .career {
     position: absolute;
-    top: 800px;
-    left: 85%;
+    top: 780px;
+    left: 70%;
     color: white;
 }
 
 .topic {
     position: absolute;
     top: 100%;
-    font-size: 18px;
+    font-size: 24px;
     width: 100%;
     top: 900px;
     left: 5px;

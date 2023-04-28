@@ -12,7 +12,6 @@ function App() {
     const element = imageRef.current;
   
     // Get the current scroll position of the element
-    const scrollY = element.scrollTop;
     const scrollX = element.scrollLeft;
   
     // Scroll the element to the top-left corner
@@ -66,11 +65,11 @@ function App() {
       <div className="column">
         <h2>Preview</h2>
         <div className="image-container" ref={imageRef}>
-          <img src="background.png" alt="background" />
-          <div className="text title" style={{ fontFamily: "'Taipei Sans TC Beta', sans-serif", fontSize: "30px", fontWeight: "bold", color: "#000", textAlign: "center" }}>{text}</div>
+          <img src={process.env.PUBLIC_URL + '/background.png'} />
+          <div className="text title" style={{ fontFamily: "'Taipei Sans TC Beta', sans-serif", fontSize: "40px", fontWeight: "bold", color: "#000"  }}>{text}</div>
           <div className="text speaker_name">{speakerName}</div>
           <div className="text career">{career}</div>
-          <div className="text topic">{topic}</div>
+          <div className="text topic" dangerouslySetInnerHTML={{ __html:topic.replace(/\n/g, '<br>') }}></div>
         </div>
       </div>
     </div>
